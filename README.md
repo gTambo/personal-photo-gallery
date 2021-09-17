@@ -11,15 +11,16 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 ## Checklist
 
 -[x] source in Photos and add to server data.js array
--[ ] complete setup (checking file paths, installing, etc)
--[ ] App.js GET as annonymous func assigned to const
+-[x] complete setup (checking file paths, imports, installing, etc)
+-[x] App.js GET as annonymous func assigned to const
 -[ ] App.js POST as const with Axios (might be a stretch goal)
+-[ ] useEffect function, build initial jsx for gallery
 -[ ] App.js PUT as const for likes
 -[ ] App.js DELETE as const with Axios (stretch goal?)
 -[ ] build GalleryList component with for loop over gallery data
 -[ ] build GalleryItem component base to receive individual gallery item
 -[ ] source GalleryItem into GalleryList
--[ ] 
+-[ ] Any other components??
 -[ ] like button, (delete button) in app.js
 -[ ] conditional rendering for photo descriptions
 -[ ] move buttons to appropriate components for rendering
