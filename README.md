@@ -10,7 +10,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 ## Checklist
 
--[ ] source in Photos and add to server array
+-[x] source in Photos and add to server data.js array
 -[ ] complete setup (checking file paths, installing, etc)
 -[ ] App.js GET as annonymous func assigned to const
 -[ ] App.js POST as const with Axios (might be a stretch goal)
