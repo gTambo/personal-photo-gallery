@@ -21,9 +21,9 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     -[x] axios request
     -[x] jsx structure for like 'button' 
 <!-- -[ ] App.js DELETE as const with Axios (stretch goal?) -->
--[ ] build GalleryList component with for loop over gallery data
--[ ] build GalleryItem component base to receive individual gallery item
--[ ] source GalleryItem into GalleryList
+-[x] build GalleryList component with for loop over gallery data
+-[x] build GalleryItem component base to receive individual gallery item
+-[x] source GalleryItem into GalleryList
 -[ ] Any other components??
 <!-- -[ ] delete button in app.js (stretch goal?)  -->
 -[ ] conditional rendering for photo descriptions

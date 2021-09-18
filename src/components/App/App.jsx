@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import GalleryList from '../GalleryList/GalleryList.jsx'
 
 function App() {
-  let [photoGallery, setPhotoGallery] = useState([]);
-
+  const [photoGallery, setPhotoGallery] = useState([]);
+  
   const fetchPhotos = () => {
     axios({
       method: 'GET',
@@ -14,7 +15,6 @@ function App() {
       setPhotoGallery(result.data);
     }).catch((error) => {
       console.log('Error in GET', error);
-      alert('could not get photo');
     });
   }
 
@@ -26,7 +26,7 @@ function App() {
   const likePhoto = (photoId) => {
     axios({
       method: 'PUT',
-      url: `/gallery/like/${photoId}`
+      url: `gallery/like/${photoId}`,
     }).then((response) => {
       console.log(`Clicked Like button!`, response);
       fetchPhotos(); // we made a change, se re-render the gallery on the DOM
@@ -35,6 +35,8 @@ function App() {
     })
   }
 
+  // const handleClick
+
   return (
       <div className="App">
         <header className="App-header">
@@ -42,15 +44,12 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <div className="Gallery">
-          {photoGallery.map(photo => (
-          <div key={photo.id} className="App-photo">
-            <img className="image" src={photo.path}/>
-            {photo.description}
-            <button className="Like-button" onClick={ () => likePhoto(photo.id) }> 🤍 </button>
+          <div>
+            <GalleryList list={photoGallery}
+                          likePhoto={likePhoto}
+            />
           </div>
-          ))}
-        
-        {/* <img src="images/goat_small.jpg"/> */}
+          {/* <img src="images/goat_small.jpg"/> */}
         </div>
       </div>
     );
