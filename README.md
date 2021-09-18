@@ -13,10 +13,12 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 -[x] source in Photos and add to server data.js array
 -[x] complete setup (checking file paths, imports, installing, etc)
 -[x] App.js GET as annonymous func assigned to const
--[ ] App.js POST as const with Axios (might be a stretch goal)
--[ ] useEffect function, build initial jsx for gallery
+<!-- -[ ] App.js POST as const with Axios (might be a stretch goal) -->
+-[x] useEffect function, build initial jsx for rendering gallery
+    -[x] source image from server calling GET, use mapping
+    -[x] structure result in some kind of div
 -[ ] App.js PUT as const for likes
--[ ] App.js DELETE as const with Axios (stretch goal?)
+<!-- -[ ] App.js DELETE as const with Axios (stretch goal?) -->
 -[ ] build GalleryList component with for loop over gallery data
 -[ ] build GalleryItem component base to receive individual gallery item
 -[ ] source GalleryItem into GalleryList
