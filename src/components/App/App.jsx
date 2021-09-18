@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList.jsx'
+import Header from '../Header/Header.jsx';
+import Footer from '../Footer/Footer.jsx';
 
 function App() {
   const [photoGallery, setPhotoGallery] = useState([]);
@@ -39,9 +41,7 @@ function App() {
 
   return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
-        </header>
+        <Header />
         <p>Gallery goes here</p>
         <div className="Gallery">
           <div>
@@ -51,6 +51,7 @@ function App() {
           </div>
           {/* <img src="images/goat_small.jpg"/> */}
         </div>
+        <Footer/>
       </div>
     );
 }

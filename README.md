@@ -28,7 +28,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 -[x] move buttons to appropriate components for rendering
 -[x] remember to render with new data (call get items), new likes
 -[x] css components and sourcing
--[ ] Header and Footer components
+-[x] Header and Footer components
 -[x] basic css styling for page
 -[x] extra css styling for pages (components)
 
