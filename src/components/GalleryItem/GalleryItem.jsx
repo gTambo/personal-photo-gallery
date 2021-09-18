@@ -4,7 +4,7 @@ function GalleryItem ({ photo, likePhoto }) {
 
     return (
         <> {photoClicked ? (<>
-            <p onClick={ () => setPhotoClicked(false)}>{photo.description}</p>
+            <p clasName="Description" onClick={ () => setPhotoClicked(false)}>{photo.description}</p>
             <button className="Like-button" onClick={ () => likePhoto(photo.id) }> 🧡 </button>Likes: {photo.likes}
           </>) : (<>
             <img className="image" src={photo.path} onClick={ () => setPhotoClicked(true)}/>

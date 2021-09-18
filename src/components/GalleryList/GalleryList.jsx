@@ -3,7 +3,7 @@ import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 function GalleryList ({ list, likePhoto}) {
 
     return (
-        <>
+        <div className="Gallery">
                 
             {list.map(photo => (
                 <div key={photo.id} className="App-photo">
@@ -12,7 +12,7 @@ function GalleryList ({ list, likePhoto}) {
                 />
                 </div>
                 ))}
-        </>
+        </div>
     )
 }
 
