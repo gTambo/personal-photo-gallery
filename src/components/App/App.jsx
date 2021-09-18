@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   let [photoGallery, setPhotoGallery] = useState([]);
 
-  const getPhotos = () => {
+  const fetchPhotos = () => {
     axios({
       method: 'GET',
       url: '/gallery'
@@ -18,9 +18,22 @@ function App() {
     });
   }
 
+  // Render Gallery on page load
   useEffect( () => {
-    getPhotos();
+    fetchPhotos();
   }, []);
+
+  const likePhoto = (photoId) => {
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${photoId}`
+    }).then((response) => {
+      console.log(`Clicked Like button!`, response);
+      fetchPhotos(); // we made a change, se re-render the gallery on the DOM
+    }).catch((error) => {
+      console.log('error in Like photo', error); // log the error
+    })
+  }
 
   return (
       <div className="App">
@@ -29,7 +42,13 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <div className="Gallery">
-          {photoGallery.map(photo =>(<div key={photo.id} className="App-photo"><img className="image" src={photo.path}/>{photo.description}</div>))}
+          {photoGallery.map(photo => (
+          <div key={photo.id} className="App-photo">
+            <img className="image" src={photo.path}/>
+            {photo.description}
+            <button className="Like-button" onClick={ () => likePhoto(photo.id) }> 🤍 </button>
+          </div>
+          ))}
         
         {/* <img src="images/goat_small.jpg"/> */}
         </div>
