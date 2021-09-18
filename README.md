@@ -24,29 +24,31 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 -[x] build GalleryList component with for loop over gallery data
 -[x] build GalleryItem component base to receive individual gallery item
 -[x] source GalleryItem into GalleryList
-<!-- -[ ] delete button in app.js (stretch goal?)  -->
 -[x] conditional rendering for photo descriptions
 -[x] move buttons to appropriate components for rendering
 -[x] remember to render with new data (call get items), new likes
--[ ] css components and sourcing
--[ ] basic css styling for page?
--[ ] 
+-[x] css components and sourcing
+-[ ] Header and Footer components
+-[ ] basic css styling for page
+-[ ] extra css styling for pages (components)
 
 ## Stretch goals
 
--[ ] git branch features 
+-[ ] (git branch features) 
 -[ ] database feature initial branch
 -[ ] database build, sql file
 -[ ] move server array items into DB
 -[ ] re-route as necessary
 -[ ] form feature initial branch
 -[ ] build form component
--[ ] client form
+-[ ] client handleSubmit
 -[ ] client POST for new image
 -[ ] write server POST
--[ ] DELETE on client
+-[ ] delete feature git branch
+-[ ] DELETE req on client
+-[ ] delete button in GalleryItem
 -[ ] DELETE on server
 -[ ] research material UI
--[ ] implement css
+-[ ] implement material UI css on git branch
 -[ ] research uppy
--[ ] implement new image upload
+-[ ] implement new image upload on Git branch
