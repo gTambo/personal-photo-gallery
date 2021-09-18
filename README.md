@@ -17,19 +17,18 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 -[x] useEffect function, build initial jsx for rendering gallery
     -[x] source image from server calling GET, use mapping
     -[x] structure result in some kind of div
--[ ] App.js PUT as const for likes
+-[x] App.js PUT as const for likes
     -[x] axios request
     -[x] jsx structure for like 'button' 
 <!-- -[ ] App.js DELETE as const with Axios (stretch goal?) -->
 -[x] build GalleryList component with for loop over gallery data
 -[x] build GalleryItem component base to receive individual gallery item
 -[x] source GalleryItem into GalleryList
--[ ] Any other components??
 <!-- -[ ] delete button in app.js (stretch goal?)  -->
--[ ] conditional rendering for photo descriptions
--[ ] move buttons to appropriate components for rendering
--[ ] remember to render with new data (call get items), new likes
--[ ] 
+-[x] conditional rendering for photo descriptions
+-[x] move buttons to appropriate components for rendering
+-[x] remember to render with new data (call get items), new likes
+-[ ] css components and sourcing
 -[ ] basic css styling for page?
 -[ ] 
 
