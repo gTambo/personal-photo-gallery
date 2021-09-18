@@ -1,6 +1,12 @@
 .Description{
-    width: 14rem;
-    height: 13rem;
+    width: 12rem;
+    height: 3rem;
     background-color: bisque;
     cursor: pointer;
+}
+
+.Like-button{
+    border: solid 2px black;
+    width: fit-content;
+    background-color: cornflowerblue;
 }

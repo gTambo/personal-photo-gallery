@@ -14,9 +14,9 @@
   font-size: 1.5em;
 }
 
-.Gallery {
-  margin: auto;
-  background-color: cornflowerblue;
+
+.Gallery:hover {
+  border: 1px solid #777;
 }
 
 .App-photo {
@@ -28,5 +28,10 @@
 
 .image {
   width: 14rem;
+  /* height: auto; */
+}
 
+.Image-border{
+  width: 14rem;
+  height: auto;
 }

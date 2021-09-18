@@ -1,0 +1,26 @@
+.Description{
+    width: 14rem;
+    height: 8.75rem;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.Like-button{
+    border: solid 2px black;
+    width: fit-content;
+    background-color: cornflowerblue;
+}
+
+.App-photo {
+    margin: auto;
+    background-color: cornflowerblue;
+    border: groove 5px crimson;
+    border-style: groove;
+  }
+
+  .App-photo:hover{
+    cursor: pointer;
+    background-color: rgba(62, 103, 179, 0.493);
+    border: groove 5px rgba(182, 32, 62, 0.671);
+
+  }

@@ -1,4 +1,5 @@
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
+import './GalleryList.css';
 
 function GalleryList ({ list, likePhoto}) {
 
