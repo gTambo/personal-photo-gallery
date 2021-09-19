@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import GalleryList from '../GalleryList/GalleryList.jsx'
+import GalleryList from '../GalleryList/GalleryList.js';
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
 
 function App() {
   const [photoGallery, setPhotoGallery] = useState([]);
-  
+
+  // Render Gallery on page load
+  useEffect( () => {
+    fetchPhotos();
+  }, []);
+
   const fetchPhotos = () => {
     axios({
       method: 'GET',
@@ -20,10 +25,7 @@ function App() {
     });
   }
 
-  // Render Gallery on page load
-  useEffect( () => {
-    fetchPhotos();
-  }, []);
+
 
   const likePhoto = (photoId) => {
     axios({
