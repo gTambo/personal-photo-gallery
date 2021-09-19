@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import GalleryList from '../GalleryList/GalleryList.js';
+import GalleryList from '../GalleryList/GalleryList.jsx';
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
 

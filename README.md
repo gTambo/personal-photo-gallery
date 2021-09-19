@@ -36,7 +36,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 -[x] database feature initial branch
 -[x] database build, sql file
 -[x] move server array items into DB
--[ ] re-route as necessary (GET anPUT edits)
+-[x] re-route as necessary (GET anPUT edits)
 -[ ] form feature initial branch
 -[ ] build form component
 -[ ] client handleSubmit
