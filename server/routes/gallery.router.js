@@ -1,5 +1,4 @@
 const express = require('express');
-// const { default: GalleryItem } = require('../../src/components/GalleryItem/GalleryItem.jsx'); // Where did this come from???
 const router = express.Router();
 // const galleryItems = require('../modules/gallery.data');
 const pool = require('../modules/pool.js');
