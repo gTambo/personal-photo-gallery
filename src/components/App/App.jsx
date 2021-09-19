@@ -2,11 +2,16 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList.jsx';
+import AddImage from '../AddImage/AddImage.jsx';
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
 
 function App() {
   const [photoGallery, setPhotoGallery] = useState([]);
+  let [imagePath, setImagePath] = useState('');
+  let [imageDescription, setImageDescription] = useState('');
+  let [imageLikes, setImageLikes] = useState(0);
+
 
   // Render Gallery on page load
   useEffect( () => {
@@ -25,9 +30,8 @@ function App() {
     });
   }
 
-
-
   const likePhoto = (photoId) => {
+
     axios({
       method: 'PUT',
       url: `gallery/like/${photoId}`,
@@ -37,6 +41,38 @@ function App() {
     }).catch((error) => {
       console.log('error in Like photo', error); // log the error
     })
+  }
+
+  const addPhoto = (evt) => {
+    evt.preventDefault();
+    axios({
+      method: 'POST',
+      url: `/gallery`,
+      data: {
+        path: {imagePath},
+        description: {imageDescription},
+        likes: {imageLikes},
+      }
+    }).then((response) => {
+      console.log('Posted', response);
+      setImagePath('');
+      setImageDescription('');
+      setImageLikes(0);
+      
+      fetchPhotos();
+    }).catch((error) => {
+      console.log('Post failed', error);
+    });
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (imagePath) {
+      addPhoto();
+    }
+    else {
+      alert('Please include an image');
+    }
   }
 
   // const handleClick
@@ -52,6 +88,14 @@ function App() {
             />
           </div>
           {/* <img src="images/goat_small.jpg"/> */}
+        </div>
+        <div>Add a new image!
+          <AddImage addPhoto={addPhoto}
+                    handleSubmit={handleSubmit}
+                    setImagePath={setImagePath}
+                    setImageDescription={setImageDescription}
+                    setImageLikes={setImageLikes}
+          />
         </div>
         <Footer/>
       </div>
