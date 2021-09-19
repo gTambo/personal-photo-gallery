@@ -1,10 +1,8 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Gallery of my life, by Greg
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+I need to familiarize with React. So this was a good start. I utilized components and jsx syntax, along with ajax in the form of axios to build a small gallery of photos. Using click handlers and 'state' and 'effect' from react, I built in functionality for a user to view all pphotos on one page, click on a like button corresponding to each photo, and with conditional rendering, they can also click on the photo itself to reveal a brief description of its contents.
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
 
@@ -35,10 +33,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 ## Stretch goals
 
 -[ ] (git branch features) 
--[ ] database feature initial branch
--[ ] database build, sql file
--[ ] move server array items into DB
--[ ] re-route as necessary
+-[x] database feature initial branch
+-[x] database build, sql file
+-[x] move server array items into DB
+-[x] re-route as necessary (GET anPUT edits)
 -[ ] form feature initial branch
 -[ ] build form component
 -[ ] client handleSubmit
