@@ -7,11 +7,6 @@
   font-size: 1.5em;
 }
 
-
-.Gallery:hover {
-  border: 1px solid #777;
-}
-
 .App-photo {
   margin: 2.5%;
 
