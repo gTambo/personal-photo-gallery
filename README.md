@@ -27,7 +27,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [x] Header and Footer components
 - [x] basic css styling for page
 - [x] extra css styling for pages (components)
-- [ ] ***ADD MORE COMMENTS!!!***
+- [ ] **__ADD MORE COMMENTS!!!__**
 
 ## Stretch goals
 
@@ -36,11 +36,11 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [x] database build, sql file
 - [x] move server array items into DB
 - [x] re-route as necessary (GET anPUT edits)
-- [ ] form feature initial branch
-- [ ] build form component
-- [ ] client handleSubmit
-- [ ] client POST for new image
-- [ ] write server POST
+- [x] form feature initial branch
+- [x] build form component
+- [x] client handleSubmit
+- [x] client POST for new image
+- [x] write server POST
 - [ ] delete feature git branch
 - [ ] DELETE req on client
 - [ ] delete button in GalleryItem

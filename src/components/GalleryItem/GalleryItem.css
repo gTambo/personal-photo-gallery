@@ -10,3 +10,14 @@
     width: fit-content;
     background-color: cornflowerblue;
 }
+
+.image {
+    width: 14rem;
+    float: right;
+    clear: left;
+}
+  
+.Image-border{
+    width: 14rem;
+    height: auto;
+}

@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList.jsx';
+import AddImage from '../AddImage/AddImage.jsx';
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
 
 function App() {
   const [photoGallery, setPhotoGallery] = useState([]);
+  let [imagePath, setImagePath] = useState('');
+  let [imageDescription, setImageDescription] = useState('');
+
 
   // Render Gallery on page load
   useEffect( () => {
@@ -25,9 +29,8 @@ function App() {
     });
   }
 
-
-
   const likePhoto = (photoId) => {
+
     axios({
       method: 'PUT',
       url: `gallery/like/${photoId}`,
@@ -37,6 +40,37 @@ function App() {
     }).catch((error) => {
       console.log('error in Like photo', error); // log the error
     })
+  }
+
+  const addPhoto = () => {
+    axios({
+      method: 'POST',
+      url: `/gallery`,
+      data: {
+        path: imagePath,
+        description: imageDescription,
+      }
+    }).then((response) => {
+      console.log('Posted', response);
+      setImagePath('');
+      setImageDescription('');
+
+      fetchPhotos();
+    }).catch((error) => {
+      console.log('Post failed', error);
+    });
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (imagePath) {
+      addPhoto();
+      setImagePath('');
+      setImageDescription('');
+    }
+    else {
+      alert('Please include an image');
+    }
   }
 
   // const handleClick
@@ -52,6 +86,13 @@ function App() {
             />
           </div>
           {/* <img src="images/goat_small.jpg"/> */}
+        </div>
+        <div>
+          <AddImage addPhoto={addPhoto}
+                    handleSubmit={handleSubmit}
+                    setImagePath={setImagePath}
+                    setImageDescription={setImageDescription}
+          />
         </div>
         <Footer/>
       </div>
