@@ -40,7 +40,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [x] build form component
 - [x] client handleSubmit
 - [x] client POST for new image
-- [ ] write server POST
+- [x] write server POST
 - [ ] delete feature git branch
 - [ ] DELETE req on client
 - [ ] delete button in GalleryItem

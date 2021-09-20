@@ -65,6 +65,8 @@ function App() {
     event.preventDefault();
     if (imagePath) {
       addPhoto();
+      setImagePath('');
+      setImageDescription('');
     }
     else {
       alert('Please include an image');

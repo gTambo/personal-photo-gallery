@@ -6,21 +6,3 @@
 .App-title {
   font-size: 1.5em;
 }
-
-.App-photo {
-  margin: 2.5%;
-
-  float: right;
-  clear: left;
-  width: 14rem;
-}
-
-.image {
-  width: 14rem;
-  /* height: auto; */
-}
-
-.Image-border{
-  width: 14rem;
-  height: auto    ;
-}

@@ -12,11 +12,15 @@
 }
 
 .App-photo {
-    margin: auto;
+    margin: 0.5%;
     background-color: cornflowerblue;
     border: groove 5px crimson;
     border-style: groove;
-  }
+    float: right;
+    align-items:center;
+    /* clear: both; */
+    width: 14rem;
+}
 
   .App-photo:hover{
     cursor: pointer;

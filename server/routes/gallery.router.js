@@ -5,6 +5,22 @@ const pool = require('../modules/pool.js');
 
 // DO NOT MODIFY THIS FILE FOR BASE MODE
 
+// POST Route
+router.post('/', (req, res) => {
+    const imageToSend = req.body;
+    console.log('POSTing new photo: ', imageToSend);
+    const sqlText = `INSERT INTO gallery ("path", "description")
+                    VALUES ($1, $2);`;
+    pool.query(sqlText, [imageToSend.path, imageToSend.description])
+    .then((response) => {
+        console.log("Added photo to the database", imageToSend);
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log('Error in db post', error);
+        res.sendStatus(500);
+    });
+});
+
 // PUT Route
 router.put('/like/:id', (req, res) => {
     console.log(req.params);
