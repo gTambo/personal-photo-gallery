@@ -1,4 +1,7 @@
 .Description{
+    padding-top: 0.5rem;
+    font-family: Gluten, cursive;
+    font-weight: 300;
     width: 12rem;
     height: 3rem;
     background-color: bisque;
