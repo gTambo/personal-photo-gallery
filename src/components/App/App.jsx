@@ -10,7 +10,6 @@ function App() {
   const [photoGallery, setPhotoGallery] = useState([]);
   let [imagePath, setImagePath] = useState('');
   let [imageDescription, setImageDescription] = useState('');
-  let [imageLikes, setImageLikes] = useState(0);
 
 
   // Render Gallery on page load
@@ -49,16 +48,14 @@ function App() {
       method: 'POST',
       url: `/gallery`,
       data: {
-        path: {imagePath},
-        description: {imageDescription},
-        likes: {imageLikes},
+        path: imagePath,
+        description: imageDescription,
       }
     }).then((response) => {
       console.log('Posted', response);
       setImagePath('');
       setImageDescription('');
-      setImageLikes(0);
-      
+
       fetchPhotos();
     }).catch((error) => {
       console.log('Post failed', error);
@@ -89,12 +86,11 @@ function App() {
           </div>
           {/* <img src="images/goat_small.jpg"/> */}
         </div>
-        <div>Add a new image!
+        <div>
           <AddImage addPhoto={addPhoto}
                     handleSubmit={handleSubmit}
                     setImagePath={setImagePath}
                     setImageDescription={setImageDescription}
-                    setImageLikes={setImageLikes}
           />
         </div>
         <Footer/>
