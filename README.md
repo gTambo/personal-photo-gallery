@@ -4,8 +4,6 @@
 
 I need to familiarize with React. So this was a good start. I utilized components and jsx syntax, along with ajax in the form of axios to build a small gallery of photos. Using click handlers and 'state' and 'effect' from react, I built in functionality for a user to view all pphotos on one page, click on a like button corresponding to each photo, and with conditional rendering, they can also click on the photo itself to reveal a brief description of its contents.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
-
 ## Checklist
 
 - [x] source in Photos and add to server data.js array

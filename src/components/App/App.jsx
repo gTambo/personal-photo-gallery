@@ -53,8 +53,8 @@ function App() {
       } // id and likes will be handled by server defaults
     }).then((response) => {
       console.log('Posted', response);
-      setImagePath(''); // reset the inputs 
-      setImageDescription(''); // TO-DO: figure out why this isn't working
+      //setImagePath(''); // reset the inputs 
+      //setImageDescription(''); // TO-DO: figure out why this isn't working
 
       fetchPhotos(); // re-render the changes
     }).catch((error) => {
@@ -66,8 +66,8 @@ function App() {
     event.preventDefault();
     if (imagePath) { // requiring an image path, no empty submissions
       addPhoto();
-      setImagePath(''); // tried resetting inputs here; still didn;t work.
-      setImageDescription(''); // might have to change the component to get the inputs to reset
+      //setImagePath(''); // tried resetting inputs here; still didn;t work.
+      //setImageDescription(''); // might have to change the component to get the inputs to reset
     }
     else {
       alert('Please include an image');
@@ -78,6 +78,7 @@ function App() {
       <div className="App">
         <Header /> {/** moved to own component */}
         <p>Gallery goes here</p>
+        {/* from live solve, Monday {JSON.stringify(photoGallery)} */}
         <div className="Gallery">
           <div>
             <GalleryList list={photoGallery}
