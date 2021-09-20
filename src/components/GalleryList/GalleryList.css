@@ -1,6 +1,6 @@
 .Description{
-    width: 14rem;
-    height: 8.75rem;
+    width: 18rem;
+    height: 10.9rem;
     background-color: bisque;
     cursor: pointer;
 }
@@ -19,7 +19,7 @@
     float: right;
     align-items:center;
     /* clear: both; */
-    width: 14rem;
+    width: 18rem;
 }
 
   .App-photo:hover{
