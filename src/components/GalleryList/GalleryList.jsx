@@ -1,19 +1,19 @@
-import GalleryItem from '../GalleryItem/GalleryItem.jsx';
+import GalleryItem from '../GalleryItem/GalleryItem.jsx'; //Gallery item component referenced in this component
 import './GalleryList.css';
 
-function GalleryList ({ list, likePhoto}) {
+function GalleryList ({ list, likePhoto}) { // destructuring relevant props
 
     return (
-        <div className="Gallery">
-                
+        <div className="Gallery"> {/** did I even use this class? */}
+                {/* Iterating over photoGallery as prop using .map(), set key to id */}
             {list.map(photo => (
                 <div key={photo.id} className="App-photo">
                 <GalleryItem photo={photo}
                             likePhoto={likePhoto}
-                />
+                /> {/** from child component, passing necessary props **/}
                 </div>
                 ))}
-        </div>
+        </div> // single div parent
     )
 }
 

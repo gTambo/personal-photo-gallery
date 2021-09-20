@@ -1,3 +1,4 @@
+// I straight-up pasted this from prim-proper-props for the stretch goal.
 // Node Module that will connect to postgesql
 const pg = require('pg');
 
@@ -5,7 +6,7 @@ const pg = require('pg');
 const Pool = pg.Pool;
 
 const pool = new Pool({
-    database: 'react_gallery', // database name (this will change)
+    database: 'react_gallery', // ***BUT I modified this line***
     host: 'localhost', // where to find the database
     port: 5432,        // port for finding the database
     max: 10,           // max number of connections for the pool

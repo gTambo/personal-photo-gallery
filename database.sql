@@ -19,3 +19,6 @@ VALUES
     ('images/SD_boulder.png', 'Me bouldering in SD', 0),
     ('images/Spearfish.png', 'Sport climbing in Spearfish, SD', 0),
     ('images/Summersville.png', 'My brother sport climbing at Summersville Lake', 0);
+
+
+-- DROP TABLE gallery; -- just in case you need it.

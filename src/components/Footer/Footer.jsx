@@ -1,5 +1,5 @@
 import './Footer.css';
-
+// Including the most important website info for any page here.
 function Footer () {
     return (
         <footer>

@@ -27,7 +27,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [x] Header and Footer components
 - [x] basic css styling for page
 - [x] extra css styling for pages (components)
-- [ ] **__ADD MORE COMMENTS!!!__**
+- [x] **__ADD MORE COMMENTS!!!__**
 
 ## Stretch goals
 
