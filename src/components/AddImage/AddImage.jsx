@@ -1,4 +1,4 @@
-
+import './AddImage.css';
 
 function AddImage (props) {
     return (

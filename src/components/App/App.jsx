@@ -42,8 +42,7 @@ function App() {
     })
   }
 
-  const addPhoto = (evt) => {
-    evt.preventDefault();
+  const addPhoto = () => {
     axios({
       method: 'POST',
       url: `/gallery`,
