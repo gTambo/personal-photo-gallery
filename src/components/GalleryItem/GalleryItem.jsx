@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './GalleryItem.css';
+import { 
+    Grid, 
+    SvgIcon, 
+    Icon 
+  } from "@material-ui/core";
 
 function GalleryItem ({ photo, likePhoto }) { // destructing useful props
   const [photoClicked, setPhotoClicked] = useState(false); // using state for conditional rendering on click event

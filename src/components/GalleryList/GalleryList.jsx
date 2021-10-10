@@ -1,5 +1,10 @@
 import GalleryItem from '../GalleryItem/GalleryItem.jsx'; //Gallery item component referenced in this component
 import './GalleryList.css';
+import { 
+    Grid, 
+    SvgIcon, 
+    Icon 
+  } from "@material-ui/core";
 
 function GalleryList ({ list, likePhoto}) { // destructuring relevant props
 
