@@ -2,43 +2,57 @@ import React, { useState } from 'react';
 import './GalleryItem.css';
 import { 
     Grid, 
-    SvgIcon, 
-    DeleteIcon,
+    Card,
+    CardContent,
+    CardMedia,
+    Typography,
+    CardActionArea,
+    CardActions,
+    Button,
     Icon,
-    Button
+    Box
   } from "@material-ui/core";
-  
 
 function GalleryItem ({ photo, likePhoto }) { // destructing useful props
-  const [photoClicked, setPhotoClicked] = useState(); // using state for conditional rendering on click event
+  const [photoClicked, setPhotoClicked] = useState(true); // using state for conditional rendering on click event
 
-    return (
-        <Grid item> {photoClicked ? (<div  className="Image-border" onClick={ () => setPhotoClicked(!photoClicked)}> 
-            <p className="Description" >{photo.description}</p>
-            <Button 
-              variant="contained" 
+  return (
+    <Grid item>
+      <Box mb={2} background-color="secondary">
+        {/* used ternary operator --> if clicked is true, show description, else show photo, including like button for both cond. */}
+        <Card sx={{ maxWidth: 400 }}>
+          <CardActionArea onClick={() => setPhotoClicked(!photoClicked)}>
+            {photoClicked ? (<>
+              <CardMedia
+                component="img"
+                height="300"
+                width="350"
+                image={photo.path}
+                alt="a photo"
+              />
+              <CardContent><Typography variant="body2" color="textSecondary">Likes: {photo.likes}</Typography></CardContent>
+            </>)
+              :
+              (<CardContent component="div" height="300" width="300">
+                <Typography variant="body2" color="textSecondary">
+                  {photo.description}
+                  <br />
+                  Likes: {photo.likes}
+                </Typography>
+              </CardContent>)}
+          </CardActionArea>
+          <CardActions>
+            <Button
+              variant="contained"
               color="secondary"
-              onClick={ () => likePhoto(photo.id) }
-              >
+              onClick={() => likePhoto(photo.id)}
+            >
               <Icon>🤍</Icon>
-              </Button>
-              Likes: {photo.likes}
-          </div>
-          ) : (
-          <>
-              <img className="image" src={photo.path} onClick={ () => setPhotoClicked(!photoClicked)}/>
-              <Button 
-                variant="contained" 
-                color="secondary"
-                onClick={ () => likePhoto(photo.id) }
-              >
-              <Icon>🤍</Icon>
-              </Button>
-              Likes: {photo.likes}
-          </>
-          )} {/* used ternary operator --> if clicked is true, show description, else show photo, including like button for both cond. */} 
-      </Grid> //enclosing return in parent div
-      
+            </Button>
+          </CardActions>
+        </Card>
+      </Box>
+    </Grid> //enclosing return in parent div
     )
 }
 
