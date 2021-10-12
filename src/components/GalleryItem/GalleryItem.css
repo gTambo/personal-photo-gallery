@@ -1,4 +1,4 @@
-.Description{
+/* .Description{
     padding-top: 0.5rem;
     font-family: Gluten, cursive;
     font-weight: 300;
@@ -6,21 +6,22 @@
     height: 3rem;
     background-color: bisque;
     cursor: pointer;
-}
+} */
 
-.Like-button{
+/* .Like-button{
     border: solid 2px black;
     width: fit-content;
     background-color: cornflowerblue;
-}
+} */
 
 .image {
-    width: 18rem;
+    width: 90%;
+    height: 90%;
     float: right;
     clear: left;
 }
   
-.Image-border{
+/* .Image-border{
     width: 18rem;
     height: auto;
-}
+} */
