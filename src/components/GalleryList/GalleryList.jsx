@@ -1,19 +1,26 @@
 import GalleryItem from '../GalleryItem/GalleryItem.jsx'; //Gallery item component referenced in this component
 import './GalleryList.css';
+import { 
+    Grid, 
+  } from "@material-ui/core";
 
 function GalleryList ({ list, likePhoto}) { // destructuring relevant props
 
     return (
-        <div className="Gallery"> {/** did I even use this class? */}
-                {/* Iterating over photoGallery as prop using .map(), set key to id */}
+        <Grid 
+            container 
+            alignItems="center"
+            justifyContent="space-evenly"
+        > 
+            {/* Iterating over photoGallery as prop using .map(), set key to id */}
             {list.map(photo => (
-                <div key={photo.id} className="App-photo">
-                <GalleryItem photo={photo}
-                            likePhoto={likePhoto}
+                <Grid container item xs={4} spacing={3} key={photo.id}>
+                <GalleryItem  photo={photo}
+                              likePhoto={likePhoto}
                 /> {/** from child component, passing necessary props **/}
-                </div>
+                </Grid>
                 ))}
-        </div> // single div parent
+        </Grid> // single div parent
     )
 }
 

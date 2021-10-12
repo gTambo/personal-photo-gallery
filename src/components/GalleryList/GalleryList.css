@@ -1,11 +1,11 @@
 .Description{
-    width: 14rem;
-    height: 8.75rem;
+    width: 18rem;
+    height: 11rem;
     background-color: bisque;
     cursor: pointer;
 }
 
-.Like-button{
+/* .Like-button{
     border: solid 2px black;
     width: fit-content;
     background-color: cornflowerblue;
@@ -18,8 +18,7 @@
     border-style: groove;
     float: right;
     align-items:center;
-    /* clear: both; */
-    width: 14rem;
+    width: 18rem;
 }
 
   .App-photo:hover{
@@ -27,4 +26,4 @@
     background-color: rgba(62, 103, 179, 0.493);
     border: groove 5px rgba(182, 32, 62, 0.671);
 
-  }
+  } */

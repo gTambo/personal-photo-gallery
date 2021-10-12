@@ -6,7 +6,7 @@ function AddImage (props) {
             <p>Add a new Photo!</p>
            <form onSubmit={props.handleSubmit}>
             <label>
-                Image URL:
+                Image URL: &nbsp;
             </label>
             <input
                 type="text"
@@ -16,7 +16,7 @@ function AddImage (props) {
             />
             <div>
             <label>
-                Image Description
+                Image Description: &nbsp;
             </label>
             <input
                 type="text"
