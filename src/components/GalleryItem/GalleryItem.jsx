@@ -9,15 +9,19 @@ import {
     CardActionArea,
     CardActions,
     Button,
-    Icon,
+    Fab,
     Box
   } from "@material-ui/core";
+//
+import { FavoriteTwoTone } from '@material-ui/icons';
+
 
 function GalleryItem ({ photo, likePhoto }) { // destructing useful props
   const [photoClicked, setPhotoClicked] = useState(true); // using state for conditional rendering on click event
 
   return (
     <Grid item>
+
       <Box mb={2} background-color="secondary">
         {/* used ternary operator --> if clicked is true, show description, else show photo, including like button for both cond. */}
         <Card sx={{ maxWidth: 400 }}>
@@ -42,13 +46,14 @@ function GalleryItem ({ photo, likePhoto }) { // destructing useful props
               </CardContent>)}
           </CardActionArea>
           <CardActions>
-            <Button
+            <Fab
+              aria-label="like"
               variant="contained"
               color="secondary"
               onClick={() => likePhoto(photo.id)}
             >
-              <Icon>🤍</Icon>
-            </Button>
+              <FavoriteTwoTone/>
+            </Fab>
           </CardActions>
         </Card>
       </Box>
