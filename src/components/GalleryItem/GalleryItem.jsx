@@ -48,7 +48,7 @@ function GalleryItem ({ photo, likePhoto }) { // destructing useful props
           <CardActions>
             <Fab
               aria-label="like"
-              variant="contained"
+              variant="circular"
               color="secondary"
               onClick={() => likePhoto(photo.id)}
             >
