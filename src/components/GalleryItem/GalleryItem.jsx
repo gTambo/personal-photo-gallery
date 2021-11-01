@@ -20,7 +20,7 @@ function GalleryItem ({ photo, likePhoto }) { // destructing useful props
   const [photoClicked, setPhotoClicked] = useState(true); // using state for conditional rendering on click event
 
   return (
-    <Grid item alignItems='stretch' sx={{display: 'flex', flexDirection: 'column'}}>
+    <Grid item  sx={{display: 'flex', flexDirection: 'column'}}>
 
       <Box height='450px' mb={2} background-color="secondary">
         {/* used ternary operator --> if clicked is true, show description, else show photo, including like button for both cond. */}

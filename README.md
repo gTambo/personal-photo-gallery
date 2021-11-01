@@ -4,7 +4,7 @@
 
 _Duration: 2 Day Sprint_
 
-This application is built to allow users to save images to a view page where they can click to see a description of the image or click to add a like for an image. 
+This application is built to allow users to save images to a view page where they can click on an image to see a description of it or click a button to add a like for an image. 
 
 I employed Material UI for some styling.
 
@@ -31,14 +31,11 @@ Link to software that is required to install the app (e.g. node).
 6. The `npm run client` command will open up a new browser tab for you!
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
-1. xxx
-2. xxx
-3. xxx
-4. xxx
-5. xxx
-6. xxx
+1. Look around
+2. Click around
+3. Fill out the form at the bottom with url and description for a new photo
+4. Click add new photo to save details
 
 
 ## Technoliogies Used
@@ -54,7 +51,7 @@ How does someone use this application? Tell a user story here.
 
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Thanks to my wife, Heather, and my brother, Michael.
 
 ## Support
-If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)
+If you have suggestions or issues, please email me at [gregtamborninol@gmail.com](www.google.com)

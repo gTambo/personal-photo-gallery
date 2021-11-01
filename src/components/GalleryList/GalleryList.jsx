@@ -15,7 +15,12 @@ function GalleryList ({ list, likePhoto}) { // destructuring relevant props
         > 
             {/* Iterating over photoGallery as prop using .map(), set key to id */}
             {list.map(photo => (
-                <Grid container alignItems="stretch" item xs={4} spacing={3} key={photo.id}>
+                <Grid container item
+                        sx={{display: 'flex', flexDirection: 'column'}}
+                        alignItems="stretch"
+                        xs={4} 
+                        spacing={3} 
+                        key={photo.id}>
                 <GalleryItem  photo={photo}
                               likePhoto={likePhoto}
                 /> {/** from child component, passing necessary props **/}
