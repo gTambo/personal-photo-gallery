@@ -2,7 +2,20 @@
 
 ## Description
 
-I need to familiarize with React. So this was a good start. I utilized components and jsx syntax, along with ajax in the form of axios to build a small gallery of photos. Using click handlers and 'state' and 'effect' from react, I built in functionality for a user to view all pphotos on one page, click on a like button corresponding to each photo, and with conditional rendering, they can also click on the photo itself to reveal a brief description of its contents.
+
+This app was written in React. I utilized components and jsx syntax, along with ajax in the form of axios to build a small gallery of photos. Using click handlers and useState and useEffect hooks from react, I built in functionality for a user to view all photos on one page, click on a like button corresponding to each photo, and with conditional rendering, they can also click on the photo itself to reveal a brief description of its contents.
+
+I employed Material UI for some styling.
+
+## Technoliogies Used
+
+- React
+- JavaScript
+- AJAX
+- expressJS
+- Material-UI
+- CSS
+- HTML
 
 ## Checklist
 
