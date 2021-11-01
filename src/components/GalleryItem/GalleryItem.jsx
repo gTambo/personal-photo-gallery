@@ -20,11 +20,11 @@ function GalleryItem ({ photo, likePhoto }) { // destructing useful props
   const [photoClicked, setPhotoClicked] = useState(true); // using state for conditional rendering on click event
 
   return (
-    <Grid item>
+    <Grid item alignItems='stretch' sx={{display: 'flex', flexDirection: 'column'}}>
 
-      <Box mb={2} background-color="secondary">
+      <Box height='450px' mb={2} background-color="secondary">
         {/* used ternary operator --> if clicked is true, show description, else show photo, including like button for both cond. */}
-        <Card sx={{ maxWidth: 400 }}>
+        <Card sx={{height: '100%', display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
           <CardActionArea onClick={() => setPhotoClicked(!photoClicked)}>
             {photoClicked ? (<>
               <CardMedia
@@ -37,13 +37,13 @@ function GalleryItem ({ photo, likePhoto }) { // destructing useful props
               <CardContent><Typography variant="body2" color="textSecondary">Likes: {photo.likes}</Typography></CardContent>
             </>)
               :
-              (<CardContent component="div" height="300" width="300">
-                <Typography variant="body2" color="textSecondary">
-                  {photo.description}
-                  <br />
-                  Likes: {photo.likes}
-                </Typography>
-              </CardContent>)}
+              (<Typography height='450px'  variant="body1" >
+                  <CardContent height='100%' color="textSecondary">
+                    {photo.description}
+                    <br />
+                    Likes: {photo.likes}
+                  </CardContent>
+                </Typography>)}
           </CardActionArea>
           <CardActions>
             <Fab

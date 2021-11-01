@@ -7,6 +7,7 @@ function UploadDisplay () {
         console.log("image info: ", info);
         // console.log('File uploaded with filename', info.filename)
         console.log('Access it on s3 at', info.fileUrl)
+        
       }
 
     const uploadOptions = {
