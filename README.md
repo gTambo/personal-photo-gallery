@@ -11,7 +11,10 @@ I employed Material UI for some styling.
 
 ## Screen Shot
 
-Include one or two screen shots of your project here (optional). Remove if unused.
+Here is a look at the main page: 
+
+![photo_cards](public/images/pageView.png)
+
 
 ### Prerequisites
 
